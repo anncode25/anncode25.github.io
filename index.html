@@ -3,211 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>글의 종류</title>
-    <!--100%를 12로 나누면 8.33%-->
-
+    <title>7글담/메인</title>
     <style>
         *{
             box-sizing: border-box;
-            margin: 0;
             padding: 0;
-        }
-        ul{
-            list-style-type: none;
+            margin: 0;
         }
         body{
-            font-family: "맑은 고딕", "돋움";
-            font-size: 100%;
+            overflow-x: hidden;
         }
-
-        [class*="c_"] {
-            float: left;
-            padding: 10px;
+        ul{
+            list-style: none;
         }
-
-        [class*="c_"] {
-            width: 100%;
-        }
-
-    @media only screen and (min-width: 600px) {
-        
-        .c_m_1 {
-            width: 8.33%;
-        }
-        .c_m_2{
-            width: 16.66%;
-        }
-        .c_m_3{
-            width: 25%;
-        }
-        .c_m_4{
-            width: 33.33%;
-        }
-        .c_m_5{
-            width: 41.66%;
-        }
-        .c_m_6{
-            width: 50%;
-        }
-        .c_m_7{
-            width: 58.33%;
-        }
-        .c_m_8{
-            width: 66.66%;
-        }.c_m_9{
-            width: 75%;
-        }
-        .c_m_10{
-            width: 83.33%;
-        }
-        .c_m_11{
-            width: 91.66%;
-        }
-        .c_m_12{
-            width: 100%;
-        }
-    }
-
-    @media only screen and (min-width: 768px) {
-        
-        .c_1 {
-            width: 8.33%;
-        }
-        .c_2{
-            width: 16.66%;
-        }
-        .c_3{
-            width: 25%;
-        }
-        .c_4{
-            width: 33.33%;
-        }
-        .c_5{
-            width: 41.66%;
-        }
-        .c_6{
-            width: 50%;
-        }
-        .c_7{
-            width: 58.33%;
-        }
-        .c_8{
-            width: 66.66%;
-        }.c_9{
-            width: 75%;
-        }
-        .c_10{
-            width: 83.33%;
-        }
-        .c_11{
-            width: 91.66%;
-        }
-        .c_12{
-            width: 100%;
-        }
-    }
-
-        header{
-            height: 80px;
-            padding: 20px;
-            background-color: #929292;
-        }
-        aside#menu{
-            color: #ffffff;
-        }
-        aside#menu li{
-            padding: 10px;
-            margin: 5px;
-            background-color: #917d63;
-        }
-        section#main{
-            padding: 15px;
-        }
-        section#main p {
-            padding: 10px;
-            font-size: 0.95em;
-            line-height: 130%;
-        }
-        aside#photos img{
-            width: 100%;
-        }
-        aside#photos li{
-            margin: 5px 0 0 0;
-        }
-        footer{
-            height: 60px;
-            padding: 10px;
-            clear: both;
+        .menu{
             text-align: center;
-            background-color: #eeeeee;
         }
-        a:link{
-            color:#ffffff;
+        .menu a{
+            padding: 8px;
+            color: #9E9E9E;
+        }
+        .menu a:link{
             text-decoration: none;
-        } 
-        a:visited {
-            color:#ffffff;
+            color: #9E9E9E;
         }
-        a:hover{
-            color:#ffffff;
+        .menu a:visited{
+            color: #9E9E9E;
+            text-decoration: none;
+        }
+        .menu a:hover{
+            text-decoration: none;
             font-weight: bold;
+            color: #9E9E9E;
             text-decoration: underline;
         }
-        a:active {
-            color:#ffffff;
+        .menu a:active{
+            text-decoration: none;
+            color: #9E9E9E;
         }
+        .menu li{
+            display: inline;
+        }
+
+        .footer{
+            padding: 20px 0 0 15px;
+            color: #787878;
+            font-size: 23.5px;
+            margin: 10px;
+        }
+
+        @media only screen and (max-width:620px){
+
+    #logo,
+    #top_menu{
+        position: static;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #logo{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .img,
+    .text{
+        float: none;
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .footer{
+        font-size: 18px;
+    }
+
+    .smallImg{
+        width: 40px;
+        height: auto;
+    }
+}
+        h1{
+            padding: 15px; 
+            text-align: center; 
+            text-decoration: underline;
+            font-weight: 500;
+            font-size: 31.5px; 
+            margin: 20px;
+            color:#595042;}
+            
+        #top_menu {
+            position: absolute;
+            top: 10px;
+            right: 35px;
+            margin-top: 30px;
+        }
+        #top_menu li{
+            display: inline;
+            color:#9E9E9E;
+        }
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 35px;
+            margin-top: 30px;
+        }
+
+        .line{
+            margin-top: 25px;
+            border-top: solid 3px black;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .img{
+        margin-left: 50px;
+        margin-top: 15px;
+        width: 30%;
+        float: left;
+        max-width: 100%;
+        }
+
+        .smallImg{
+        margin-top: 15px;
+        margin-right: 15px;
+        float: left;
+        }
+
+        .last{
+            margin-left: 30px;
+            font-size: 19.5px;
+            color: #C2C2C2;
+        }
+
+        h2{
+            font-size: 27.5px;
+            margin:15px;
+            margin-top: 40px;
+        }
+        p{
+            font-size: 23.5px;
+            font-family: "맑은 고딕";
+            margin: 20px;
+            line-height: 45px;
+        }
+        .text{
+            float: left;
+            width: 60%;
+            color:#9E9E9E
+        }
+        .clear{
+            clear:both;
+        }
+
     </style>
+
 </head>
-<body>
-    <header class="c_12">
-        <h1>7년간의 글쓴이 생활을 담다.</h1>
-    </header>
+<body bgcolor="#F6F6F6">
+    
+    <div>
+        <h1>7년의 글쓴이 생활을 담다.</h1>
+    </div>
 
-    <aside id="menu" class="c_3 c_m_3">
-        <ul>
-            <a href="index.html"><li>글의 종류</li></a>
-            <a href="menu2.html"><li>나의 글</li></a>
-            <a href="menu3.html"><li>성과</li></a>
-            <a href="menu4.html"><li>글 잘 쓰는 법</li></a>
-            <a href="menu5.html"><li>커뮤니티</li></a>
+    <ul id="top_menu">
+        <li> 회원가입 /</li>
+        <li> 로그인 /</li>
+        <li> 고객센터 </li>
         </ul>
-    </aside>
 
-    <section id="main" class="c_m_9 c_6">
-        <h1>글의 종류</h1>
+    <a href=index.html><img id="logo" src="img/logoImg.png"></a>
 
-        <p> 
-            <strong>정보 전달이 목적인 글</strong>은, 정보를 객관적이고 정확하게 전달하는 게 중요하다.
-            <u>중의적 표현을 최대한 피하고</u>, 누구라도 이해할 수 있는 <u>명확한 문장</u>을 사용해야 한다.
-            정보 전달 글의 모습은 크게 두 가지 유형으로 나뉜다.
-        </p>
+    <div style="overflow: auto;">
+        <div class="menu">
+            <ul>
+            <li><a href="menu1.html">글의 종류</a></li>
+            <li><a href="menu2.html">나의 글</a></li>
+            <li><a href="menu3.html">성과</a></li>
+            <li><a href="menu4.html">글 잘 쓰는 법</a></li>
+            <li><a href="menu5.html">커뮤니티</a></li>
+            </ul>
+        </div>
 
-        <p>
-            첫째는, <strong>누구나 볼 수 있는</strong> 정보 전달용 글 유형이다.
-            즉, 배경지식이나 관련 지식 없이도 이해시키는 게 중요하다.
-            이러한 글의 경우, 간결한 문장과 쉬운 단어를 선택하는 것이 옳다.
-            만약 쉬운 단어로 대체했을 때 글이 쓸데없이 길어진다면, 전문 단어를 사용하되
-            해당 단어에 대한 설명을 포함하는 것이 좋다.
-        </p>
+        <div class="line"></div>
+    
+    
+    <img class="img" src="img/writingImg.png">
 
-        <p> 둘째는, <strong>전문적인</strong> 정보 전달용 글 유형이다.
-            이러한 글들은 독자가 해당 분야에 대한 전문 지식을 가지고 있다고 상정한다.
-            때문에 단어 하나하나를 일일히 설명하는 데에 집중하기 보다는, 그 글을 이용해
-            전하고 싶은 정보가 도출되는 과정을 꼼꼼하게 설명하는 것이 중요하다.
-        </p>
+    <div class="text">
+    <h2>글을 쓴다는 건 뭘까.</h2>
+    <p>글을 쓴다는 것은 나의 마음을, 내 안에 있는 이야기를,
+    밖으로 꺼내어 표현하는 것이다.
+    그렇기에 우리는 어떻게 해야 우리의 글이,
+    우리 안의 이야기를 왜곡 없이 남들의 마음에 닿도록 쓸 수 있는지
+    그 방법에 대해 고민해야 한다.</p>
+    </div>
 
-    </section>
+    <div class="clear"></div>
 
-    <aside id="photos" class="c_m_12 c_3">
-        <h4>관련 사진</h4>
-        <ul>
-            <li><img src="img/blog.png"></li>
-            <li><img src="img/dbPia.png"></li>
-        </ul>
-    </aside>
+    <div class="line"></div>
 
-    <footer class="c_12">
-        COPYRIGHT(C) 정민채 All Rights Reserved.
-    </footer>
+    <div class="text" style="margin-left:20px;">
+    <h2>이 사이트의 의의</h2>
+    <p>AI를 이용하면 순식간에 긴 글이 써지는 시대에 우리는 살고 있다.
+    그럼에도 불구하고 우리가 글을 쓰는 법을 찾는 이유는,
+    생각 없이 써진 글로는 사람의 마음을 움직일 수 없기 때문이다.
+    우리는 사람이기에, 그 누구보다 같은 사람의 마음을 잘 안다.
+    그것이 우리가 가진 강점이다.</p>
+    </div>
+
+    <img class="img" src="img/bookShelves.png">
+
+    <div class="clear"></div>
+
+    <div class="line"></div>
+
+    </div>
+
+    <div class="footer">Contact Me<br>
+        <a href="mailto:heeyam06@gachon.ac.kr"><img class="smallImg" src="img/gmail.png"></a><p>E-mail: heeyam06@gachon.ac.kr</p>
+        <img class="smallImg" src="img/blog.png"> <img class="smallImg" src="img/kakaoTalk.png"> <img class="smallImg" src="img/instagram.png">
+    <div class="clear"></div>
+        <p class="last">
+        7글담<br>
+        대표이사: 정민채<br>
+        회사 위치: 경기도 성남시 가천대학교 AI공학관<br>
+        전화: 010-8671-5476<br>
+        Copyright by 정민채TM All Rights Reserved</p>
+    </div>
 </body>
 </html>

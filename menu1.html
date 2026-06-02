@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7글담/나의 글</title>
+    <title>7글담/글의 종류</title>
     <style>
         *{
             box-sizing: border-box;
@@ -13,54 +13,19 @@
         ul{
             list-style: none;
         }
-         .title{
+        .title{
             text-align: center;
             color: #9E9E9E;
             font-size: 27.5px;
             font-weight: bold;
         }
 
-        .menu{
-            text-align: center;
-        }
-        .menu a{
-            padding: 8px;
-            color: #9E9E9E;
-        }
-        .menu a:link{
-            text-decoration: none;
-            color: #9E9E9E;
-        }
-        .menu a:visited{
-            color: #9E9E9E;
-            text-decoration: none;
-        }
-        .menu a:hover{
-            text-decoration: none;
-            font-weight: bold;
-            color: #9E9E9E;
-            text-decoration: underline;
-        }
-        .menu a:active{
-            text-decoration: none;
-            color: #9E9E9E;
-        }
-        .menu li{
-            display: inline;
-        }
 
         .footer{
             padding: 20px 0 0 15px;
             color: #787878;
             font-size: 23.5px;
             margin: 10px;
-        }
-
-        @media only screen and (max-width:620px){
-            /*모바일용*/
-            .menu, .main, .right{
-                width: 100%;
-            }
         }
         h1{
             padding: 15px; 
@@ -70,6 +35,58 @@
             font-size: 31.5px; 
             margin: 20px;
             color:#595042;}
+
+             @media only screen and (max-width:620px){
+
+    #logo,
+    #top_menu{
+        position: static;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #logo{
+        display: block;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .bigList{
+        font-size: 18px;
+    }
+
+    table,
+    tr,
+    td{
+        display: block;
+        width: 100%;
+    }
+
+    .img{
+        width: 90%;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .text{
+        width: 100%;
+        float: none;
+    }
+}
             
         #top_menu {
             position: absolute;
@@ -96,17 +113,14 @@
             margin-right: auto;
         }
 
-        .img{
-        margin-left: 50px;
-        margin-top: 15px;
-        width: 30%;
-        float: left;
-        }
-
         .smallImg{
         margin-top: 15px;
         margin-right: 15px;
         float: left;
+        }
+
+        .bigList{
+            font-size: 23.5px;
         }
 
         .last{
@@ -134,6 +148,11 @@
         .clear{
             clear:both;
         }
+        table, td, th, tr{
+            padding: 5px 5px 5px 5px;
+            margin: 5px 5px 5px 5px;
+            border-collapse: collapse;}
+        
 
     </style>
 
@@ -149,53 +168,63 @@
         <li> 로그아웃 </li>
         </ul>
 
-
     <a href=index.html><img id="logo" src="img/logoImg.png"></a>
 
     <div style="overflow: auto;">
         <div>
-            <p class="title">나의 글</p>
+            <p class="title">글의 종류</p>
         </div>
 
         <div class="line"></div>
     
-    
-    <img class="img" src="img/school.jpeg">
 
     <div class="text">
-    <h2>나의 첫 글.</h2>
-    <p><strong>나의 첫 글</strong>은, <u>초등학교</u> 5학년 때 썼던 글이다.
-            사실 글을 시작하게 된 계기도 별 거 없었다. 그저 그때 소설을 쓰는 친구가 있었고,
-            그게 내 흥미를 끌었을 뿐이다. 그림으로만 표현하던 그 단편적인 이야기들을,
-            긴 글을 통해 풀어나갈 수 있다는 게 매력적으로 와닿았다.</p>
-    </div>
+
+    <table>
+        <tr>
+            <td><img class="img" src="img/m1Img1.png"></td>
+            <td><h2>1. 정보를 전하는 글</h2>
+                <p>목적이 정보전달인 글들</p>
+            <ul class="bigList">
+                <li>- 논문</li>
+                <li>- 교과서</li>
+                <li>- AI 프롬프트</li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+            <td><img class="img" src="img/m1Img2.png"></td>
+            <td><h2>2. 마음을 전달하는 글</h2>
+                <p>목적이 마음전달인 글들</p>
+            <ul class="bigList">
+                <li>- 수필</li>
+                <li>- 문학책</li>
+                <li>- 일기</li>
+                <li>- 편지</li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+            <td><img class="img" src="img/m1Img3.png"></td>
+            <td><h2>3. 일상에서 쓰이는 글들</h2>
+                <p>일상에서 쓰이는 글들</p>
+            <ul class="bigList">
+                <li>- 카톡</li>
+                <li>- 트위터</li>
+            </ul>
+        </td>
+        </tr>
+    </table>
 
     <div class="clear"></div>
 
     <div class="line"></div>
-
-    <div class="text" style="margin-left:20px;">
-    <h2>첫 작품의 완결</h2>
-    <p>그때 썼던 첫 글은 <strong>소설</strong>이었다. 학생 신분이었기에 학교에 있는 시간이 길었는데,
-            학교에서는 휴대폰을 사용할 수 없었다. 그래서 나는 늘 노트 한 권을 들고 다니며,
-            수기로 소설을 썼다. 그때는 그게 불편하다고도 생각하지 못했다. 마음에 들지 않으면
-            한 장을 통째로 뜯어버리면 그만이었다. 늘 그 노트를 들고 다니며, 친구들에게 보여주곤 했다.
-            주변 친구들의 좋은 반응 덕분이었을까, 나는 한껏 얇아져버린 그 노트를 끝까지 적는 데 성공했다.
-            그리고 그 무렵쯤 소설을 완성할 수 있었다.</p>
-    </div>
-
-    <img class="img" src="img/note.jpeg">
-
-    <div class="clear"></div>
-
-    <div class="line"></div>
-
-    </div>
 
     <div class="footer">
         <p class="last">
         글 종류 추가 및 오류 신고는 고객센터 이용<br>
         마지막 수정일: 2026-05-12</p>
     </div>
+
 </body>
 </html>

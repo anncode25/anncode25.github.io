@@ -3,181 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>글 잘 쓰는 법</title>
-
+    <title>7글담/글 잘 쓰는 법</title>
     <style>
         *{
             box-sizing: border-box;
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
         ul{
-            list-style-type: none;
+            list-style: none;
         }
-        body{
-            font-family: "맑은 고딕", "돋움";
-            font-size: 100%;
-        }
-
-        [class*="c_"] {
-            float: left;
-            padding: 10px;
-        }
-
-        [class*="c_"] {
-            width: 100%;
-        }
-
-    @media only screen and (min-width: 600px) {
-        
-        .c_m_1 {
-            width: 8.33%;
-        }
-        .c_m_2{
-            width: 16.66%;
-        }
-        .c_m_3{
-            width: 25%;
-        }
-        .c_m_4{
-            width: 33.33%;
-        }
-        .c_m_5{
-            width: 41.66%;
-        }
-        .c_m_6{
-            width: 50%;
-        }
-        .c_m_7{
-            width: 58.33%;
-        }
-        .c_m_8{
-            width: 66.66%;
-        }.c_m_9{
-            width: 75%;
-        }
-        .c_m_10{
-            width: 83.33%;
-        }
-        .c_m_11{
-            width: 91.66%;
-        }
-        .c_m_12{
-            width: 100%;
-        }
-    }
-
-    @media only screen and (min-width: 768px) {
-        
-        .c_1 {
-            width: 8.33%;
-        }
-        .c_2{
-            width: 16.66%;
-        }
-        .c_3{
-            width: 25%;
-        }
-        .c_4{
-            width: 33.33%;
-        }
-        .c_5{
-            width: 41.66%;
-        }
-        .c_6{
-            width: 50%;
-        }
-        .c_7{
-            width: 58.33%;
-        }
-        .c_8{
-            width: 66.66%;
-        }.c_9{
-            width: 75%;
-        }
-        .c_10{
-            width: 83.33%;
-        }
-        .c_11{
-            width: 91.66%;
-        }
-        .c_12{
-            width: 100%;
-        }
-    }
-
-        header{
-            height: 80px;
-            padding: 20px;
-            background-color: #929292;
-        }
-        aside#menu{
-            color: #ffffff;
-        }
-        aside#menu li{
-            padding: 10px;
-            margin: 5px;
-            background-color: #917d63;
-        }
-        section#main{
-            padding: 15px;
-        }
-        section#main p {
-            padding: 10px;
-            font-size: 0.95em;
-            line-height: 130%;
-        }
-        aside#photos img{
-            width: 100%;
-        }
-        aside#photos li{
-            margin: 5px 0 0 0;
-        }
-        footer{
-            height: 60px;
-            padding: 10px;
-            clear: both;
+         .title{
             text-align: center;
-            background-color: #eeeeee;
-        }
-        a:link{
-            color:#ffffff;
-            text-decoration: none;
-        } 
-        a:visited {
-            color:#ffffff;
-        }
-        a:hover{
-            color:#ffffff;
+            color: #9E9E9E;
+            font-size: 27.5px;
             font-weight: bold;
+        }
+
+        .menu{
+            text-align: center;
+        }
+        .menu a{
+            padding: 8px;
+            color: #9E9E9E;
+        }
+        .menu a:link{
+            text-decoration: none;
+            color: #9E9E9E;
+        }
+        .menu a:visited{
+            color: #9E9E9E;
+            text-decoration: none;
+        }
+        .menu a:hover{
+            text-decoration: none;
+            font-weight: bold;
+            color: #9E9E9E;
             text-decoration: underline;
         }
-        a:active {
-            color:#ffffff;
+        .menu a:active{
+            text-decoration: none;
+            color: #9E9E9E;
         }
-        
+        .menu li{
+            display: inline;
+        }
+
+        .footer{
+            padding: 20px 0 0 15px;
+            color: #787878;
+            font-size: 23.5px;
+            margin: 10px;
+        }
+
+        @media only screen and (max-width:620px){
+            /*모바일용*/
+            .menu, .main, .right{
+                width: 100%;
+            }
+        }
+        h1{
+            padding: 15px; 
+            text-align: center; 
+            text-decoration: underline;
+            font-weight: 500;
+            font-size: 31.5px; 
+            margin: 20px;
+            color:#595042;}
+            
+        #top_menu {
+            position: absolute;
+            top: 10px;
+            right: 35px;
+            margin-top: 30px;
+        }
+        #top_menu li{
+            display: inline;
+            color:#9E9E9E;
+        }
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 35px;
+            margin-top: 30px;
+        }
+
+        .line{
+            margin-top: 25px;
+            border-top: solid 3px black;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .img{
+        margin-left: 50px;
+        margin-top: 15px;
+        width: 30%;
+        float: left;
+        }
+
+        .smallImg{
+        margin-top: 15px;
+        margin-right: 15px;
+        float: left;
+        }
+
+        .last{
+            margin-left: 30px;
+            font-size: 19.5px;
+            color: #C2C2C2;
+        }
+
+        h2{
+            font-size: 27.5px;
+            margin:15px;
+            margin-top: 40px;
+        }
+        p{
+            font-size: 23.5px;
+            font-family: "맑은 고딕";
+            margin: 20px;
+            line-height: 45px;
+        }
+        .text{
+            float: left;
+            width: 60%;
+            color:#9E9E9E
+        }
+        .clear{
+            clear:both;
+        }
+
     </style>
+
 </head>
-<body>
-    <header class="c_12">
-        <h1>7년간의 글쓴이 생활을 담다.</h1>
-    </header>
+<body bgcolor="#F6F6F6">
+    
+    <div>
+        <h1>7년의 글쓴이 생활을 담다.</h1>
+    </div>
 
-    <aside id="menu" class="c_3 c_m_3">
-        <ul>
-            <a href="index.html"><li>글의 종류</li></a>
-            <a href="menu2.html"><li>나의 글</li></a>
-            <a href="menu3.html"><li>성과</li></a>
-            <a href="menu4.html"><li>글 잘 쓰는 법</li></a>
-            <a href="menu5.html"><li>커뮤니티</li></a>
+    <ul id="top_menu">
+        <li> 마이페이지 /</li>
+        <li> 로그아웃 </li>
         </ul>
-    </aside>
 
-    <section id="main" class="c_m_9 c_6">
-        <h1>글 잘 쓰는 법</h1>
 
-        <p> 
-            <strong>맞춤법</strong>은 글을 쓰는 데 있어 생각보다 매우 중요하다.
+    <a href=index.html><img id="logo" src="img/logoImg.png"></a>
+
+    <div style="overflow: auto;">
+        <div>
+            <p class="title">글 잘 쓰는 법</p>
+        </div>
+
+        <div class="line"></div>
+    
+    
+    <img class="img" src="img/spell.jpeg">
+
+    <div class="text">
+    <h2>맞춤법의 중요성</h2>
+    <p><strong>맞춤법</strong>은 글을 쓰는 데 있어 생각보다 매우 중요하다.
             글은 누구나 쓸 수 있다. 어떻게 쓰느냐의 차이는 있겠지만, 글을 쓴다는 행위
             자체는 정말 어렵지 않다. 그렇기 때문에, 글의 신뢰도를 판단하는 것은 독자로서
             가장 당연한 행위 중 하나이다. 글의 신뢰도 파악에는 여러가지 방식이 있지만,
@@ -186,36 +173,33 @@
             사람의 다른 지식은 해박하고 전문적일 거라고 확신할 수 있을까? 때문에
             맞춤법을 틀리는 것은 독자가 글에 대한 신뢰도를 가장 빠르게 잃게 만드는 행동이다.
         </p>
+    </div>
 
-        <p>
-            <strong>퇴고</strong>는 거울을 보는 과정이다. 아무리 화장을 잘 하는
+    <div class="clear"></div>
+
+    <div class="line"></div>
+
+    <div class="text" style="margin-left:20px;">
+    <h2>내 글에게 거울 비춰주기</h2>
+    <p><strong>퇴고</strong>는 거울을 보는 과정이다. 아무리 화장을 잘 하는
             사람이라도 거울을 보지 않고 화장을 하면 평소만큼 예쁘게 하기 어렵다. 글
             또한 크게 다르지 않다. 내 글이 지금 어떤 모습을 하고 있는지, 독자의 시선에서
             바라볼 때 아쉬운 점은 어떤 것인지. 그것을 파악하고 수정하는 것이 퇴고다. 글을
-            잘 쓰기 위해서 퇴고는 선택이 아닌 필수 작업이다.
-        </p>
+            잘 쓰기 위해서 퇴고는 선택이 아닌 필수 작업이다.</p>
+    </div>
 
-        <p>
-            <strong>목적과 수단이 일치</strong>해야 한다. 만약 당신이 쓰는 글이 
-            소설이라면, 독자로 하여금 소설 속 상황을 머릿속에 그려낼 수 있도록 이끌어야 한다.
-            정보의 나열이 아니라, 상황을 그려내듯 문장에 옮겨 담아야 한다. 하지만 반대로,
-            당신이 쓰는 글이 주장문이나 논문이라면, 상세한 수식어는 오히려 과한 장신구다.
-            집 앞 편의점에 갈 때 단순히 드레스가 예쁘다는 이유로 시상식 드레스를 입고 가는
-            사람이 없듯, 글도 마찬가지다. 수식과 꾸밈도 목적에 맞게 사용해야 한다.
-        </p>
+    <img class="img" src="img/rewrite.jpeg">
 
-    </section>
+    <div class="clear"></div>
 
-    <aside id="photos" class="c_m_12 c_3">
-        <h4>관련 사진</h4>
-        <ul>
-            <li><img src="img/spell.jpeg"></li>
-            <li><img src="img/rewrite.jpeg"></li>
-        </ul>
-    </aside>
+    <div class="line"></div>
 
-    <footer class="c_12">
-        COPYRIGHT(C) 정민채 All Rights Reserved.
-    </footer>
+    </div>
+
+    <div class="footer">
+        <p class="last">
+        글 종류 추가 및 오류 신고는 고객센터 이용<br>
+        마지막 수정일: 2026-05-12</p>
+    </div>
 </body>
 </html>
